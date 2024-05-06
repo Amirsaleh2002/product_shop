@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "swiper": "^9.1.1"
+  },
+  "scripts": {
+    "bulid": "react-scripts build && copy liara_nginx.conf ./build/"
+  }
+}

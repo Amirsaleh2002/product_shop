@@ -1,0 +1,105 @@
+.header {
+  width: 100%;
+  margin-top: 60px;
+}
+.mySwiper {
+  background-color: rgb(230, 20, 50);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstSlider {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 20, 50);
+  width: 250px !important;
+  padding: 1rem 2rem 0 0;
+}
+.adviceImg > img {
+  width: 42%;
+  height: 89%;
+  cursor: pointer;
+}
+.advice {
+  padding: 6px 20px;
+  cursor: pointer;
+}
+.advice p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.seeAll {
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px 0;
+  color: #fff;
+}
+.lastSlider {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 350px !important;
+  height: 300px;
+  padding: 1rem 2rem 0 0;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgb(20, 40, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon i {
+  color: rgb(20, 40, 220);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.seeOther {
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.swiper-slide > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent;
+}
+.res > a > img {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  background-color: transparent;
+}
+.changeBtn {
+  color: red;
+  background-color: #fff;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media (max-width: 968px)
+{
+  .changeBtns{
+    display: none;
+  }
+}

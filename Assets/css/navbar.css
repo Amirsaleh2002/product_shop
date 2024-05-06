@@ -1,0 +1,189 @@
+.fa-bars{
+  font-size: 30px;
+}
+.header-nav {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.rightSide {
+  display: flex;
+  align-items: center;
+  flex: 5;
+}
+.hamburgerMenu{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+.hamburgerMenu span:first-child{
+  height: 4px;
+  width: 24px;
+}
+.hamburgerMenu span{
+  width: 18px;
+  height: 3px;
+  display: block;
+  background-color: rgb(109, 107, 240);
+  margin: 7px auto 0;
+  border-radius: 5px;
+}
+.searchBox #search{
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 12px;
+}
+.searchBox #search:focus{
+  outline: 0;
+}
+.searchBox #search::placeholder{
+  color: #da0707;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding-right: 6px;
+}
+.nav-ul {
+  list-style: none;
+  display: flex;
+}
+.nav-ul > li {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > a > img {
+  width: 190px;
+  height: 95px;
+}
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+.cart {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.register {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 9px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.register:hover {
+  background-color: #ce942a;
+  color: #fff;
+}
+.subMenu {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  right: -200%;
+  top: 100%;
+  background-color: #fff;
+  padding: 16px 25px;
+  z-index: 111;
+  width: 770px;
+  line-height: 40px;
+}
+.subMenuItem{
+  transition: all 0.3s;
+}
+.subMenuLink {
+  color: #918f8f;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+.subMenuItemTitle {
+  margin-top: 10px;
+}
+.subMenuTitle a {
+  color: #252525;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+.subMenuItemTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  border-right: 4px solid red;
+  padding-right: 10px;
+}
+.menus {
+  display: flex;
+  gap: 3rem;
+}
+.nav-item:hover .subMenu {
+  display: block;
+}
+.subMenuItem:hover{
+  color: green;
+  transform: translate(-10px);
+}
+.subMenuItem:hover a{
+  color: green;
+}
+.subMenuTitle a:hover{
+  transform: translate(-10px);
+  color: red;
+}
+
+@media (max-width: 1100px) {
+  .nav{
+    display: block;
+    padding:  20px;
+  }
+  .navbar{
+    width: 100%;
+  }
+  .rightSide , .leftSide {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchBox{
+    width: 100%;
+  }
+  .searchBox #search{
+    padding: 4px 2px;
+  }
+  .hamburgerMenu{
+    display: block;
+    margin-left: 1rem;
+  }
+  .searchBox input{
+    width: 100%;
+  }
+  .nav-ul , .logo {
+    display: none;
+  }
+  .changeBtn {
+    background-color: transparent;
+  }
+}

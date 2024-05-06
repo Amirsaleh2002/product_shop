@@ -1,0 +1,226 @@
+.body{
+    width: 93%;
+    margin: 3rem auto;
+}
+.product{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+.item{
+    flex:25%
+}
+.item > a > img{
+    width: 100%;
+    border-radius: 1.3rem;
+}
+.slider{
+    background-color: rgb(173, 37, 37);
+}
+.text , .part{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: blueviolet;
+    margin: 2rem 0;
+}
+.see-others{
+    height: 249.69px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 ;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.see-others > a{
+    text-decoration: none;
+    color: #252525;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.changeBtn2 {
+    color: red;
+    background-color: #252525;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.parts{
+    width: 100%;
+    margin: 4rem 0;
+}
+.first-part , .second-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.part-item > a > img{
+    width: 160px;
+    height: 160px;
+}
+.part-item > p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.part-item{
+    flex: 15%;
+}
+.brands{
+    position: relative;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.brand-item{
+    border-left: 1px solid #cfcfcf;
+    padding-left: 0.8rem;
+}
+.brand-item:last-child{
+    border-left: none;
+}
+.brand-item > a > img{
+    width: 100%;
+    height: 100%;
+}
+.text-brand{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.text-brand i {
+    color: rgb(158, 7, 100);
+    font-size: 1.6rem;
+}
+.slider-pagination2{
+    position: absolute;
+    top: 88% !important;
+}
+.product-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem ;
+    margin-top: 4rem;
+} 
+.first , .second{
+    flex: 50%;
+}
+.first > a > img, .second > a > img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+.suggestion-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cfcfcf;
+    border-radius: 20px;
+}
+.suggestion-section-top , .suggestion-section-bottom {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestion-section-top {
+    border-bottom: 1px solid #cfcfcf;
+}
+.suggestion-product {
+    border-left: 1px solid #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 14px;
+}
+.suggestion-product:nth-child(6) , .suggestion-product:last-child {
+    border-left: none;
+}
+.suggestion-product > a > img{
+    width: 130px;
+    height: 130px;
+}
+.suggestion-product > p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+.goesUp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    z-index: 111;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.goesUp i {
+    color: #eb0a0a;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.active-goesButton {
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width: 1110px) {
+    .first-part , .second-part ,.product-box , .product{
+    flex-wrap: wrap;
+    }
+    .part-item {
+      flex: 30%;
+    }
+    .item{
+        flex : 40%;
+    }
+    .first , .second{
+        flex: 100%;
+    }
+    .res{
+        width: auto !important;
+    }
+    .suggestion-section {
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 768px) {
+    .slider-pagination2{
+        top: 69% !important;
+    }
+    .text-brand{
+        font-size: 0.9rem;
+        margin-bottom: 1.3rem;
+    }
+    .slider-pagination2{
+        display: none;
+    }
+}   
